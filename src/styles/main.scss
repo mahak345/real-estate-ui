@@ -1,0 +1,83 @@
+@import "bootstrap/scss/bootstrap";
+
+$primary: #27c2ad;
+$dark: #1f2a37;
+$light-bg: #f2fbfa;
+$text-muted: #6b7280;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: $dark;
+  background: #ffffff;
+}
+
+section {
+  padding: 80px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.property-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  }
+
+  img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1rem 1.2rem;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .price {
+    color: #1abc9c;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+  }
+
+  .location {
+    font-size: 0.85rem;
+    color: #777;
+  }
+}
+
+.btn-primary {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+
+  &:hover {
+    background-color: darken(#1abc9c, 5%);
+    border-color: darken(#1abc9c, 5%);
+  }
+}
+
+@import "./navbar";
+@import "./hero";
+@import "./offers";
+@import "./testimonials";
+@import "./AboutUs";
+@import "./newsletter";
+@import "./footer";

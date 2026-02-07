@@ -1,0 +1,37 @@
+.hero-section {
+  padding: 80px 0;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero-section .search-box {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-section .search-box input,
+.hero-section .search-box select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 🔥 SEARCH BUTTON */
+.hero-section .search-box button {
+  background-color: #1ec7a6 ;   /* 
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .search-box button:hover {
+  background-color: #168a78;   /* ✅ darker hover */
+}
+

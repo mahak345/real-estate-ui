@@ -1,0 +1,29 @@
+body {
+  background: #e5e5e5;
+}
+
+.container-fixed {
+  margin: auto;
+  background: white;
+}
+
+/* Mobile 360 */
+@media (max-width: 720px) {
+  .container-fixed {
+    max-width: 360px;
+  }
+}
+
+/* Tablet 720 */
+@media (min-width: 721px) and (max-width: 1440px) {
+  .container-fixed {
+    max-width: 720px;
+  }
+}
+
+/* Desktop 1440 */
+@media (min-width: 1441px) {
+  .container-fixed {
+    max-width: 1440px;
+  };
+}

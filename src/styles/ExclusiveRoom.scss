@@ -1,0 +1,92 @@
+.exclusive-page {
+  max-width: 420px;
+  margin: auto;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.top-header {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.thumbs img {
+  width: 60px;
+  margin: 6px;
+  border-radius: 6px;
+}
+
+.next-btn {
+  border: none;
+  background: #1ec7a6;
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.info {
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.mortgage {
+  background: #eafaf6;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.content {
+  padding: 12px;
+  font-size: 14px;
+}
+
+.map-box {
+  height: 180px;
+  background: #ddd;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.brief {
+  background: #f5fbf9;
+  padding: 12px;
+  margin: 10px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.suggestions img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.newsletter {
+  background: #eafaf6;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer {
+  background: #1ec7a6;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

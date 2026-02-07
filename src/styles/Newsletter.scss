@@ -1,0 +1,82 @@
+
+.newsletter-section {
+  background-color: #f4fbfb;
+  padding: 90px 0;
+
+  color: #2b2b2b;
+}
+
+.newsletter-content {
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2b2b2b !important;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 26px;
+    color: #4f4f4f !important; 
+    max-width: 420px;
+  }
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  input,
+  .form-control {
+    width: 320px;
+    height: 48px;
+    padding: 0 16px;
+    font-size: 15px;
+
+    color: #000000 !important;       
+    background-color: #ffffff !important;
+
+    border-radius: 6px;
+    border: 1px solid #9aa5a5;
+    outline: none;
+  }
+
+  input::placeholder {
+    color: #8a9a9a;
+    opacity: 1;
+  }
+
+  .subscribe-btn {
+    height: 48px;
+    padding: 0 34px;
+
+    background-color: transparent;
+    border: 2px solid #20c7b7;
+
+    color: #20c7b7 !important;  
+    font-size: 15px;
+    font-weight: 600;
+
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #20c7b7;
+      color: #ffffff !important;
+    }
+  }
+}
+
+/* Image */
+.newsletter-image {
+  max-width: 340px;
+  opacity: 0.85;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}

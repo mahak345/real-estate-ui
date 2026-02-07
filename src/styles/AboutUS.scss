@@ -1,0 +1,36 @@
+.about-section {
+  padding: 100px 0; // ⬅ base bada
+  background: #fff;
+}
+
+.about-container {
+  max-width: 500px; // ⬅ default container se thoda wide
+}
+
+.about-img {
+  border-radius: 16px;
+  box-shadow: 0 20px 10px rgba(0,0,0,0.05);
+}
+
+.about-title {
+  font-weight: 50;
+  margin-bottom: 18px;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #6c757d;
+  margin-bottom: 18px;
+}
+
+/* Mobile tweak */
+@media (max-width: 70px) {
+  .about-section {
+    padding: 70px 0;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+}

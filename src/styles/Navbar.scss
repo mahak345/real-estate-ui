@@ -1,0 +1,25 @@
+.navbar {
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+
+  .navbar-brand {
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+  .nav-item {
+    cursor: pointer;
+
+    .nav-link {
+      color: #555;
+      font-weight: 500;
+
+      &:hover {
+        color: #27c2ad;
+      }
+    }
+  }
+}
