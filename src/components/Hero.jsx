@@ -76,54 +76,49 @@ function Hero() {
   };
 
   return (
-    <section className="hero-section py-5">
-      <div className="container">
-        <div className="row align-items-center">
+    <section className="hero-section">
+      <div className="hero-container">
+        <div className="hero-content">
+          <h1 className="hero-title">
+            Modern living <br /> for everyone
+          </h1>
 
-          <div className="col-md-6 mb-4 mb-md-0">
-            <h1 className="hero-title">
-              Modern living <br /> for everyone
-            </h1>
+          <p className="hero-text">
+            We provide a complete service for the sale, purchase or rental of real estate.
+          </p>
 
-            <p className="hero-text">
-              We provide a complete service for the sale, <br />
-              purchase or rental of real estate.
-            </p>
+          {/* Search Box */}
+          <div className="hero-search">
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Search location"
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
+            />
 
-            {/* Search Box */}
-            <div className="hero-search d-flex flex-column flex-sm-row gap-2 mt-4">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Search location"
-                value={location}
-                onChange={(e) => setLocation(e.target.value)}
-              />
+            <select
+              className="search-select"
+              value={propertyType}
+              onChange={(e) => setPropertyType(e.target.value)}
+            >
+              <option value="">Property type</option>
+              <option value="Apartment">Apartment</option>
+              <option value="House">House</option>
+              <option value="Villa">Villa</option>
+            </select>
 
-              <select
-                className="form-select"
-                value={propertyType}
-                onChange={(e) => setPropertyType(e.target.value)}
-              >
-                <option value="">Property type</option>
-                <option value="Apartment">Apartment</option>
-                <option value="House">House</option>
-                <option value="Villa">Villa</option>
-              </select>
-
-              <button className="btn btn-success" onClick={handleSearch}>
-                Search
-              </button>
-            </div>
-
-            {/* Error message */}
-            {error && <small className="text-danger mt-2 d-block">{error}</small>}
+            <button className="search-btn" onClick={handleSearch}>
+              Search
+            </button>
           </div>
 
-          <div className="col-md-6 text-center text-md-end">
-            <img src={heroImg} alt="hero" className="img-fluid" />
-          </div>
+          {/* Error message */}
+          {error && <small className="error-msg">{error}</small>}
+        </div>
 
+        <div className="hero-image">
+          <img src={heroImg} alt="hero" className="hero-img" />
         </div>
       </div>
     </section>

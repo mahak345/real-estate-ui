@@ -40,9 +40,12 @@
 
 
 
-
 import PropertyList from "../components/PropertyList";
 import "../styles/ExclusiveRoom.scss";
+import "../styles/Newsletter.scss";
+import "../styles/Navbar.scss";
+import"../styles/Footer.scss";
+import "../styles/Responsive.scss"
 
 const ExclusiveRoom = () => {
   return (

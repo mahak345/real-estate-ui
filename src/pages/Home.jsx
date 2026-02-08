@@ -5,6 +5,8 @@ import AboutUs from "../components/AboutUs";
 import Newsletter from "../components/Newsletter";
 import "../styles/Home.scss";
 import "../styles/Newsletter.scss";
+import "../styles/hero.scss";
+import "../styles/main.scss";
 
 function Home() {
   return (

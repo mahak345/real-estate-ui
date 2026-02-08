@@ -109,10 +109,7 @@
 
 // export default Testimonials;
 
-
-
-
-
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
@@ -172,12 +169,16 @@ function Testimonials() {
     },
   ];
 
+  // Refs for navigation buttons
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+  const swiperRef = useRef(null); // <-- swiperRef define karo
+
   return (
     <section className="testimonials-section">
       <div className="container">
-
         {/* HEADER */}
-        <div className="row mb-5 align-items-center">
+        <div className="row mb-4 align-items-center">
           <div className="col-md-8">
             <h2 className="section-title">Testimonials</h2>
             <p className="section-subtitle">
@@ -187,24 +188,41 @@ function Testimonials() {
           </div>
 
           {/* NAV BUTTONS */}
-          <div className="col-md-4 text-md-end mt-3 mt-md-0">
-            <button className="nav-btn me-2 testimonial-prev">‹</button>
-            <button className="nav-btn testimonial-next">›</button>
+          <div className="col-md-4 d-flex justify-content-end align-items-center gap-2">
+            <div
+              className="circle-arrow"
+              ref={prevRef}
+              onClick={() => swiperRef.current?.slidePrev()}
+            >
+              ‹
+            </div>
+            <div
+              className="circle-arrow"
+              ref={nextRef}
+              onClick={() => swiperRef.current?.slideNext()}
+            >
+              ›
+            </div>
           </div>
         </div>
 
         {/* SWIPER */}
         <Swiper
           modules={[Navigation, Pagination]}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
           navigation={{
-            nextEl: ".testimonial-next",
-            prevEl: ".testimonial-prev",
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          }}
+          onBeforeInit={(swiper) => {
+            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.nextEl = nextRef.current;
           }}
           pagination={{ clickable: true }}
           spaceBetween={30}
           breakpoints={{
             0: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
+            720: { slidesPerView: 2 },
             992: { slidesPerView: 3 },
           }}
         >
@@ -212,7 +230,6 @@ function Testimonials() {
             <SwiperSlide key={index}>
               <div className="testimonial-card">
                 <span className="quote">“</span>
-
                 <p className="testimonial-text">{item.text}</p>
 
                 {/* CLIENT INFO WITH IMAGE */}
@@ -222,8 +239,7 @@ function Testimonials() {
                     alt={item.name}
                     className="client-img"
                     onError={(e) =>
-                      (e.target.src =
-                        "https://via.placeholder.com/80?text=User")
+                      (e.target.src = "https://via.placeholder.com/80?text=User")
                     }
                   />
                   <div>
@@ -235,7 +251,6 @@ function Testimonials() {
             </SwiperSlide>
           ))}
         </Swiper>
-
       </div>
     </section>
   );

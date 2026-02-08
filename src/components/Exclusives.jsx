@@ -1,106 +1,165 @@
+// import React from "react";
+// import "../styles/ExclusiveRoom.scss";
 
-import React from "react";
-import "../styles/ExclusiveRoom.scss"; 
+// export default function PropertyDetails() {
+//   return (
+//     <div className="property-page">
+//       {/* HEADER */}
+//       <header className="property-header">
+//         <span className="back-btn">← Back</span>
+//         <h1>Exclusive 5-room residence with a rooftop terrace</h1>
+//       </header>
 
-import { Button, Form } from "react-bootstrap";
-// import { FaBed, FaRulerCombined, FaMapMarkerAlt } from "react-icons/fa";
+//       {/* MAIN IMAGE */}
+//       <div className="property-image">
+//         <img
+//           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+//           alt="Property"
+//         />
+//       </div>
 
-export default function ExclusivePropertyPage() {
+//       {/* INFO ROW */}
+//       <div className="property-info">
+//         <div>🏢 a flat</div>
+//         <div>📐 224 m²</div>
+//         <div>📍 Barcelona</div>
+//       </div>
+
+//       {/* MORTGAGE */}
+//       <div className="mortgage-box">
+//         <p>Mortgage since</p>
+//         <h3>807.57 € / month</h3>
+//         <button>Get a mortgage</button>
+//       </div>
+
+//       {/* DESCRIPTION */}
+//       <div className="property-content">
+//         <h3>Description</h3>
+//         <p>
+//           Real estate offers an exclusive FOR SALE elegant large 5-room
+//           apartment in Vinch Street in the Condominium Renaissance residential
+//           complex.
+//         </p>
+
+//         <h3>Basic characteristics</h3>
+//         <ul>
+//           <li>Number of rooms: 5</li>
+//           <li>Usable area: 224 m²</li>
+//           <li>Balcony: Yes</li>
+//           <li>Terrace: Yes</li>
+//         </ul>
+//       </div>
+
+//       {/* MAP */}
+//       <div className="map">
+//         <img
+//           src="https://maps.googleapis.com/maps/api/staticmap?center=Barcelona&zoom=13&size=600x300"
+//           alt="Map"
+//         />
+//       </div>
+
+//       {/* CONTACT */}
+//       <div className="contact-box">
+//         <h3>Contact us</h3>
+//         <input type="text" placeholder="Your full name" />
+//         <input type="email" placeholder="Your email" />
+//         <textarea placeholder="Your message"></textarea>
+//         <button>Send Message</button>
+//       </div>
+
+//       {/* NEWSLETTER */}
+//       <div className="newsletter">
+//         <h3>Subscribe to newsletter</h3>
+//         <p>Get the latest news and interesting offers</p>
+//         <div className="newsletter-form">
+//           <input placeholder="Your e-mail address" />
+//           <button>Subscribe</button>
+//         </div>
+//       </div>
+
+//       {/* FOOTER */}
+//       <footer className="footer">
+//         <p>🏠 Real Estate</p>
+//       </footer>
+//     </div>
+//   );
+// }
+
+import "../styles/ExclusiveRoom.scss";
+import "../styles/Navbar.scss";
+import "../styles/Footer.scss"
+
+export default function ExclusiveRoom() {
   return (
-    <div className="exclusive-page">
-      {/* HEADER */}
-      <div className="page-header">
-        <span className="back">← Back</span>
-        <h2>Exclusive 5-room residence with a rooftop terrace</h2>
-      </div>
+    <div className="property-page">
+      <header className="property-header">
+        <span className="back-btn">← Back</span>
+        <h1>Exclusive 5-room residence with a rooftop terrace</h1>
+      </header>
 
-      {/* IMAGE GALLERY */}
-      <div className="gallery">
+      <div className="property-image">
         <img
           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
-          alt="property"
-          className="main-img"
+          alt="Exclusive property"
         />
-        <div className="thumbs">
-          <img src="https://images.unsplash.com/photo-1560185008-cde436f6a4d0" />
-          <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e" />
-          <img src="https://images.unsplash.com/photo-1560448071-39c7b7d4d7ef" />
-        </div>
       </div>
 
-      {/* QUICK INFO */}
-      <div className="quick-info">
-        <div><FaBed /> a Flat</div>
-        <div><FaRulerCombined /> 224 m²</div>
-        <div><FaMapMarkerAlt /> Barcelona I.</div>
+      <div className="property-info">
+        <div>🏢 Flat</div>
+        <div>📐 224 m²</div>
+        <div>📍 Barcelona</div>
       </div>
 
-      {/* MORTGAGE */}
-      <div className="mortgage">
+      <div className="mortgage-box">
         <p>Mortgage since</p>
-        <h4>807.57 € / month</h4>
-        <Button className="mortgage-btn">Get a mortgage</Button>
+        <h3>807.57 € / month</h3>
+        <button>Get a mortgage</button>
       </div>
 
-      {/* DESCRIPTION */}
-      <section className="section">
-        <h5>Description</h5>
+      <div className="property-content">
+        <h3>Description</h3>
         <p>
-          Real estate offers an exclusive FOR SALE elegant large 5-room
-          apartment on Vincent Hozstric Street in the Condominium Renaissance
-          residential complex.
+          This exclusive five-room apartment is located in a premium residential
+          complex in Barcelona. The property offers spacious interiors, modern
+          architecture, and a private rooftop terrace with panoramic city views.
         </p>
-        <p>
-          The apartment offers extraordinary comfort, high-class interior and
-          modern furniture.
-        </p>
-      </section>
 
-      {/* CHARACTERISTICS */}
-      <section className="section">
-        <h5>Brief characteristics</h5>
+        <h3>Basic characteristics</h3>
         <ul>
-          <li>City: Barcelona I.</li>
-          <li>Type: 5 rooms</li>
+          <li>Rooms: 5</li>
           <li>Usable area: 224 m²</li>
-          <li>Terrace: Yes</li>
           <li>Balcony: Yes</li>
+          <li>Terrace: Yes</li>
         </ul>
-      </section>
+      </div>
 
-      {/* MAP */}
-      <section className="section">
-        <h5>Location</h5>
-        <iframe
-          title="map"
-          src="https://www.google.com/maps?q=Barcelona&output=embed"
-          loading="lazy"
-        ></iframe>
-      </section>
+      <div className="map">
+        <img
+          src="https://via.placeholder.com/800x300?text=Location+Map"
+          alt="Map"
+        />
+      </div>
 
-      {/* CONTACT */}
-      <section className="contact">
-        <h5>Contact us</h5>
-        <div className="agent">
-          <img src="https://i.pravatar.cc/80" />
-          <div>
-            <strong>Haylo Dorin</strong>
-            <p>📞 +34 555 781 793</p>
-          </div>
+      <div className="contact-box">
+        <h3>Contact us</h3>
+        <input type="text" placeholder="Full name" />
+        <input type="email" placeholder="Email address" />
+        <textarea placeholder="Your message" rows="4" />
+        <button>Send Message</button>
+      </div>
+
+      <div className="newsletter">
+        <h3>Subscribe to newsletter</h3>
+        <p>Get the latest news and exclusive real estate offers</p>
+        <div className="newsletter-form">
+          <input placeholder="Your e-mail address" />
+          <button>Subscribe</button>
         </div>
+      </div>
 
-        <Form>
-          <Form.Control placeholder="Your full name" />
-          <Form.Control placeholder="Your email" className="mt-2" />
-          <Form.Control
-            as="textarea"
-            rows={3}
-            placeholder="Your message"
-            className="mt-2"
-          />
-          <Button className="send-btn">Send Message</Button>
-        </Form>
-      </section>
+      <footer className="footer">
+        <p>🏠 Real Estate</p>
+      </footer>
     </div>
   );
 }

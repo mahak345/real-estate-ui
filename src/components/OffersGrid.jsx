@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // Create placeholder imports - replace with actual images
 import containerImg from '../assets/images/container.png'; // Add this file
 import bedroomImg from '../assets/images/Number input.png'; // Add this file
@@ -87,12 +88,14 @@ function OffersGrid() {
           {offers.map((item, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
               <div className="offer-card h-100 shadow-sm border rounded overflow-hidden">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="img-fluid"
-                  style={{ height: "220px", objectFit: "cover" }}
-                />
+                <Link to="/exclusive">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="img-fluid"
+                    style={{ height: "220px", objectFit: "cover" }}
+                  />
+                </Link>
                 <div className="offer-body p-3">
                   <h6 className="mb-2">{item.title}</h6>
                   <div className="price fw-bold text-primary fs-5 mb-1">{item.price}</div>

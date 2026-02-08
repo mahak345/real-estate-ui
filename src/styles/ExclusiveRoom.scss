@@ -1,92 +1,303 @@
-.exclusive-page {
-  max-width: 420px;
-  margin: auto;
+/* ================= BASE ================= */
+.property-page {
+  background: #f3fbfb;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: sticky;
+  top: 0;
   background: #fff;
-  font-family: Arial, sans-serif;
+  padding: 12px 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 9999;
 }
 
-.top-header {
-  padding: 10px;
-  border-bottom: 1px solid #eee;
+.navbar-container {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.title {
-  font-size: 20px;
-  font-weight: 600;
-  padding: 10px;
+.navbar-logo {
+  height: 40px;
 }
 
-.main-img {
+.navbar-nav {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+
+  .nav-link {
+    font-size: 15px;
+    color: #555;
+    text-decoration: none;
+
+    &:hover {
+      color: #27c2ad;
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+
+  span {
+    width: 22px;
+    height: 3px;
+    background: #333;
+  }
+}
+
+/* ================= PAGE WRAPPER ================= */
+.property-wrapper {
+  max-width: 960px;
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+.property-header {
+  padding: 16px;
+
+  .back-btn {
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+}
+
+/* ================= IMAGE ================= */
+.property-image img {
   width: 100%;
   border-radius: 8px;
 }
 
-.thumbs img {
-  width: 60px;
-  margin: 6px;
-  border-radius: 6px;
-}
-
-.next-btn {
-  border: none;
-  background: #1ec7a6;
-  color: white;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-}
-
-.info {
-  padding: 10px 0;
+/* ================= INFO ================= */
+.property-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
   font-size: 14px;
+  color: #20c7b7;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.mortgage {
-  background: #eafaf6;
-  padding: 12px;
-  margin: 10px;
+/* ================= MORTGAGE ================= */
+.mortgage-box {
+  background: #e8f7f6;
+  margin: 16px;
+  padding: 16px;
   border-radius: 8px;
+
+  h3 {
+    color: #20c7b7;
+  }
+
+  button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background: #20c7b7;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+  }
 }
 
-.content {
-  padding: 12px;
-  font-size: 14px;
+/* ================= CONTENT ================= */
+.property-content {
+  padding: 16px;
+
+  h3 {
+    margin-top: 24px;
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  ul {
+    padding-left: 18px;
+    font-size: 14px;
+  }
 }
 
-.map-box {
-  height: 180px;
-  background: #ddd;
-  margin: 10px;
-  border-radius: 8px;
-}
-
-.brief {
-  background: #f5fbf9;
-  padding: 12px;
-  margin: 10px;
-}
-
-.contact input,
-.contact textarea {
+/* ================= MAP ================= */
+.map img {
   width: 100%;
-  margin-bottom: 8px;
-  padding: 8px;
-}
-
-.suggestions img {
-  width: 100%;
+  margin: 16px 0;
   border-radius: 8px;
 }
 
+/* ================= CONTACT ================= */
+.contact-box {
+  background: #fff;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    width: 100%;
+    background: #20c7b7;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+  }
+}
+
+/* ================= NEWSLETTER ================= */
 .newsletter {
-  background: #eafaf6;
-  padding: 15px;
+  padding: 32px 16px;
   text-align: center;
+
+  .newsletter-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    input {
+      flex: 1;
+      padding: 10px;
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #20c7b7;
+      background: #fff;
+      color: #20c7b7;
+      border-radius: 6px;
+    }
+  }
 }
 
-.footer {
-  background: #1ec7a6;
-  color: white;
-  text-align: center;
-  padding: 15px;
+/* ================= FOOTER ================= */
+.footer-green {
+  background: #20c7b7;
+  padding: 40px 16px;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-logo {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  li {
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+/* ================= MOBILE (≤ 360px) ================= */
+@media (max-width: 360px) {
+  .navbar {
+    padding: 10px 12px;
+  }
+
+  .navbar-logo {
+    height: 32px;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .property-header h1 {
+    font-size: 18px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}
+
+/* ================= TABLET (≤ 720px) ================= */
+@media (max-width: 720px) {
+  .navbar-logo {
+    height: 34px;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .property-wrapper {
+    max-width: 720px;
+  }
+
+  .property-header h1 {
+    font-size: 22px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ================= DESKTOP (≥ 1440px) ================= */
+@media (min-width: 1440px) {
+  .property-wrapper {
+    max-width: 960px;
+  }
+
+  .navbar-container,
+  .footer-container {
+    max-width: 1440px;
+  }
+
+  .property-header h1 {
+    font-size: 26px;
+  }
 }
