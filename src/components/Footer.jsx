@@ -1,5 +1,5 @@
 import "../styles/Footer.scss";
-
+import Logo from "../assets/images/Logo.png"; 
 function Footer() {
   return (
     <footer className="footer-green">
@@ -9,7 +9,7 @@ function Footer() {
           {/* LOGO IMAGE */}
           <div className="col-md-4 mb-3 mb-md-0">
             <img
-              src="/images/logo.png"  
+              src={Logo}
               alt="Real Estate Logo"
               className="footer-logo-img"
             />
