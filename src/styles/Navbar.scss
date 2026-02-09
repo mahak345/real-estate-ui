@@ -1,4 +1,4 @@
-/* ================= BASE NAVBAR ================= */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -18,10 +18,9 @@
   display: block;
 }
 
-/* ================= NAV LINKS ================= */
 .navbar-nav {
-  display: flex;       // default desktop
-  flex-direction: row; // horizontal links
+  display: flex;     
+  flex-direction: row; 
 
   .nav-link {
     font-size: 15px;
@@ -34,8 +33,7 @@
     }
   }
 }
-
-/* ================= MOBILE & TABLET (≤ 721px) ================= */
+//tablet
 @media (max-width: 721px) {
   .navbar-collapse {
     position: absolute;
@@ -54,14 +52,14 @@
     }
 
     &.show {
-      display: flex !important;   // ensure visible
-      flex-direction: column;     // vertical links
+      display: flex !important;  
+      flex-direction: column;
     }
   }
 
   .navbar-nav {
-    display: flex !important;   // override desktop flex
-    flex-direction: column;     // vertical
+    display: flex !important;   
+    flex-direction: column;   
     width: 100%;
 
     .nav-item {
@@ -80,9 +78,7 @@
     }
   }
 }
-
-
-/* ================= MOBILE SMALL (≤ 360px) ================= */
+//mobile
 @media (max-width: 360px) {
   .navbar-collapse {
     padding: 10px 12px;
@@ -97,7 +93,7 @@
     height: 35px;
   }
 }
-/* ================= LARGE DESKTOP ================= */
+//desktop
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;

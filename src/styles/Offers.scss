@@ -1,4 +1,4 @@
-/* ==================== OFFERS - DESKTOP (1440px) ==================== */
+//desktop
 
 .offer-card {
   height: 100%;
@@ -104,8 +104,7 @@
   color: #999;
   margin-top: 4px;
 }
-
-/* ==================== TABLET (720px - 1199px) ==================== */
+//tablet
 
 @media (max-width: 1200px) {
   .offers-actions {
@@ -219,7 +218,7 @@
   }
 }
 
-/* ==================== MOBILE (≤ 360px) ==================== */
+//mobile
 
 @media (max-width: 360px) {
   .offer-card {

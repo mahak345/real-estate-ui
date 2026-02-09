@@ -1,11 +1,10 @@
-/* ================= BASE ================= */
 .property-page {
   background: #f3fbfb;
   font-family: sans-serif;
   width: 100%;
 }
 
-/* ================= NAVBAR ================= */
+//Navbar
 .navbar {
   position: sticky;
   top: 0;
@@ -55,14 +54,12 @@
     background: #333;
   }
 }
-
-/* ================= PAGE WRAPPER ================= */
 .property-wrapper {
   max-width: 960px;
   margin: auto;
 }
 
-/* ================= HEADER ================= */
+//header
 .property-header {
   padding: 16px;
 
@@ -78,13 +75,11 @@
   }
 }
 
-/* ================= IMAGE ================= */
 .property-image img {
   width: 100%;
   border-radius: 8px;
 }
 
-/* ================= INFO ================= */
 .property-info {
   display: flex;
   justify-content: space-around;
@@ -95,7 +90,6 @@
   gap: 8px;
 }
 
-/* ================= MORTGAGE ================= */
 .mortgage-box {
   background: #e8f7f6;
   margin: 16px;
@@ -117,7 +111,6 @@
   }
 }
 
-/* ================= CONTENT ================= */
 .property-content {
   padding: 16px;
 
@@ -137,14 +130,12 @@
   }
 }
 
-/* ================= MAP ================= */
 .map img {
   width: 100%;
   margin: 16px 0;
   border-radius: 8px;
 }
 
-/* ================= CONTACT ================= */
 .contact-box {
   background: #fff;
   margin: 16px;
@@ -169,8 +160,53 @@
     border-radius: 6px;
   }
 }
+.related-section {
+  padding: 24px 16px;
 
-/* ================= NEWSLETTER ================= */
+  h3 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // ✅ 3 cards = 1 row
+  gap: 16px;
+}
+
+.related-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  h4 {
+    font-size: 13px;
+    margin: 8px;
+  }
+
+  p {
+    font-size: 12px;
+    color: #777;
+    margin: 0 8px;
+  }
+
+  span {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #20c7b7;
+    margin: 8px;
+  }
+}
+
 .newsletter {
   padding: 32px 16px;
   text-align: center;
@@ -197,7 +233,6 @@
   }
 }
 
-/* ================= FOOTER ================= */
 .footer-green {
   background: #20c7b7;
   padding: 40px 16px;
@@ -229,7 +264,7 @@
     cursor: pointer;
   }
 }
-/* ================= MOBILE (≤ 360px) ================= */
+//Mobile
 @media (max-width: 360px) {
   .navbar {
     padding: 10px 12px;
@@ -258,7 +293,7 @@
   }
 }
 
-/* ================= TABLET (≤ 720px) ================= */
+//tablet
 @media (max-width: 720px) {
   .navbar-logo {
     height: 34px;
@@ -286,7 +321,7 @@
   }
 }
 
-/* ================= DESKTOP (≥ 1440px) ================= */
+//desktop
 @media (min-width: 1440px) {
   .property-wrapper {
     max-width: 960px;

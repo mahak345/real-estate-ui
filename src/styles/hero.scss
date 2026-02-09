@@ -1,4 +1,4 @@
-/* ==================== HERO - DESKTOP (1440px) ==================== */
+//hero
 
 .hero-section {
   min-height: 600px;
@@ -46,7 +46,7 @@
   }
 }
 
-/* Search Box */
+//search
 .hero-search {
   display: flex;
   gap: 12px;
@@ -130,7 +130,7 @@
   width: 100%;
 }
 
-/* ==================== TABLET (720px - 1439px) ==================== */
+//tablet
 
 @media (max-width: 1200px) {
   .hero-container {
@@ -213,7 +213,7 @@
     }
   }
 
-  /* Stack vertically on tablet */
+  // tablet 
   .hero-search {
     flex-direction: column;
     gap: 10px;
@@ -232,7 +232,7 @@
   }
 }
 
-/* ==================== MOBILE (≤ 360px) ==================== */
+//Mobile
 
 @media (max-width: 360px) {
   .hero-section {
@@ -270,7 +270,7 @@
     }
   }
 
-  /* Stack vertically and full width */
+  /*full width */
   .hero-search {
     flex-direction: column;
     gap: 8px;

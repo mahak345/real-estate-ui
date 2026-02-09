@@ -1,4 +1,4 @@
-/* ==================== SEARCH - DESKTOP (1440px) ==================== */
+//desktop
 
 .search-section {
   background: #f8f9fa;
@@ -82,7 +82,7 @@
   }
 }
 
-/* ==================== TABLET (720px - 1199px) ==================== */
+//tablet
 
 @media (max-width: 1200px) {
   .search-section {
@@ -184,8 +184,7 @@
     border-radius: 6px;
   }
 }
-
-/* ==================== MOBILE (≤ 360px) ==================== */
+//mobile
 
 @media (max-width: 360px) {
   .search-section {

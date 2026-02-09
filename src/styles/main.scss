@@ -1,6 +1,6 @@
 @import "bootstrap/scss/bootstrap";
 
-/* COLORS & VARIABLES  */
+//variable
 $primary: #27c2ad;
 $dark: #1f2a37;
 $light-bg: #f2fbfa;
@@ -212,5 +212,5 @@ p  { font-size: 16px; line-height: 1.6; color: $text-muted; margin-bottom: 16px;
 @import "./AboutUs";
 @import "./newsletter";
 @import "./footer";
-@import "./Responsive";
+
 
