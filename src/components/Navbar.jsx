@@ -1,7 +1,8 @@
+// Navbar.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.scss";
-import logo from "../assets/images/Logo.png";
+import Logo from "../assets/images/Logo.png"; 
 
 function Navbar() {
   return (
@@ -10,7 +11,7 @@ function Navbar() {
 
         {/* LOGO */}
         <Link className="navbar-brand" to="/">
-          <img src={logo} alt="Logo" className="navbar-logo" />
+          <img src={Logo} alt="Logo" /> 
         </Link>
 
         {/* TOGGLER */}
@@ -41,7 +42,6 @@ function Navbar() {
             <li className="nav-item">
               <a className="nav-link" href="#contact">Contact</a>
             </li>
-
             <li className="nav-item">
               <Link className="nav-link" to="/search">Search</Link>
             </li>
@@ -54,24 +54,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
