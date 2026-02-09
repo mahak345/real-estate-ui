@@ -101,6 +101,7 @@ function SearchBar() {
               value={price}
               onChange={(e) => setPrice(e.target.value)}
             >
+              
               <option value="">Select price</option>
               <option value="below-300">Below 300k</option>
               <option value="300-500">300k – 500k</option>

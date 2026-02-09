@@ -12,12 +12,12 @@ function Hero() {
       setError("Please enter a location");
       return;
     }
+    
 
     if (propertyType === "") {
       setError("Please select a property type");
       return;
     }
-
     setError("");
     alert(`Searching ${propertyType} in ${location}`);
   };

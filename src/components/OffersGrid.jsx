@@ -108,7 +108,6 @@ function OffersGrid() {
                     style={{ height: "220px", objectFit: "cover" }}
                   />
                 </Link>
-
                 <div className="offer-body p-3">
                   <h6 className="mb-2">{item.title}</h6>
                   <div className="price fw-bold text-primary fs-5 mb-1">
@@ -124,5 +123,4 @@ function OffersGrid() {
     </section>
   );
 }
-
 export default OffersGrid;

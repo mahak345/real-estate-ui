@@ -6,7 +6,6 @@ function PropertyCard({ title, price, location }) {
         className="card-img-top"
         alt="property"
       />
-
       <div className="card-body">
         <h6 className="fw-bold">{title}</h6>
         <p className="text-success fw-bold mb-1">{price}</p>

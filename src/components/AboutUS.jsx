@@ -4,7 +4,6 @@ function AboutUs() {
   return (
     <section className="container py-5">
       <div className="row align-items-center">
-
         {/* IMAGE */}
         <div className="col-md-6 mb-4 mb-md-0">
           <img
@@ -13,8 +12,6 @@ function AboutUs() {
             className="img-fluid rounded"
           />
         </div>
-
-
         {/* TEXT */}
         <div className="col-md-6">
           <h1 className="fw-bold mb-3">About us</h1>

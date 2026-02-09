@@ -141,11 +141,9 @@ export default function ExclusiveRoom() {
         <textarea placeholder="Your message" rows="4" />
         <button>Send Message</button>
       </div>
-
       {/* YOU MIGHT BE INTERESTED IN */}
       <div className="related-section">
         <h3>You might be interested in</h3>
-
         <div className="related-grid">
           <div className="related-card">
             <img src={related1} alt="Property 1" />
@@ -153,6 +151,7 @@ export default function ExclusiveRoom() {
             <p>Barcelona I.</p>
             <span>€ 980 000</span>
           </div>
+          
 
           <div className="related-card">
             <img src={related2} alt="Property 2" />

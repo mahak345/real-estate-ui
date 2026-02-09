@@ -23,11 +23,12 @@ function Home() {
       <section id="about-us" className="section about-section">
         <AboutUs />
       </section>
-
       <section id="contact" className="section newsletter-section">
         <Newsletter />
       </section>
     </main>
   );
 }
+
+
 export default Home;

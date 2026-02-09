@@ -21,6 +21,7 @@ function Newsletter() {
     setEmail("");
   };
 
+  
   return (
     <section className="newsletter-section">
       <div className="newsletter-container">
