@@ -10,7 +10,6 @@ import offer5 from "../assets/images/container2.png";
 import offer6 from "../assets/images/container3.png";
 import offer7 from "../assets/images/container1.png";
 import offer8 from "../assets/images/container2.png";
-
 function TopOffers() {
   const swiperRef = useRef(null);
   const [error, setError] = useState("");

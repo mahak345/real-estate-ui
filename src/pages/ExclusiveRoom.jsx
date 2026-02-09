@@ -16,5 +16,4 @@ const ExclusiveRoom = () => {
   );
 };
 
-
 export default ExclusiveRoom;
