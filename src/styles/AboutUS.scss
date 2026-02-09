@@ -1,23 +1,24 @@
-//desktop
-
 .about-section {
-  padding: 100px 20px;
+  padding: 100px 40px; 
   background: #fff;
 }
 
 .about-container {
-  max-width: 1200px;
+  max-width: 1400px; 
+  width: 100%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  display: flex;
   align-items: center;
+  gap: 60px;
+  flex-direction: row;
+  justify-content: space-between; 
 }
 
 .about-image-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1; 
 }
 
 .about-img {
@@ -36,6 +37,7 @@
 
 .about-content {
   padding-left: 20px;
+  flex: 1; 
 }
 
 .about-title {
@@ -54,112 +56,40 @@
 }
 
 //tablet
-
-@media (max-width: 1200px) {
+@media (max-width: 720px) {
   .about-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    flex-direction: column; 
+    gap: 20px;
+    align-items: center;
   }
 
   .about-content {
     padding-left: 0;
-  }
-
-  .about-title {
-    font-size: 32px;
-  }
-
-  .about-img {
-    max-width: 400px;
-  }
-}
-
-@media (max-width: 900px) {
-  .about-section {
-    padding: 70px 20px;
-  }
-
-  .about-container {
-    gap: 30px;
-  }
-
-  .about-title {
-    font-size: 28px;
-    margin-bottom: 14px;
-  }
-
-  .about-text {
-    font-size: 14px;
-    margin-bottom: 12px;
-  }
-
-  .about-img {
-    max-width: 350px;
-    border-radius: 14px;
-  }
-}
-
-@media (max-width: 720px) {
-  .about-section {
-    padding: 60px 16px;
-  }
-
-  .about-container {
-    gap: 20px;
-  }
-
-  .about-title {
-    font-size: 24px;
-    margin-bottom: 12px;
-  }
-
-  .about-text {
-    font-size: 13px;
-    margin-bottom: 10px;
-    line-height: 1.5;
+    text-align: center; 
   }
 
   .about-img {
     max-width: 280px;
-    border-radius: 12px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
   }
 }
 
 //mobile
-
 @media (max-width: 360px) {
-  .about-section {
-    padding: 50px 12px;
-    background: #fafbfb;
-  }
-
   .about-container {
-    grid-template-columns: 1fr;
     gap: 16px;
   }
 
-  .about-image-wrapper {
-    margin-bottom: 8px;
+  .about-title {
+    font-size: 20px;
+  }
+
+  .about-text {
+    font-size: 12px;
   }
 
   .about-img {
     max-width: 100%;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-  }
-
-  .about-title {
-    font-size: 20px;
-    margin-bottom: 10px;
-    line-height: 1.2;
-  }
-
-  .about-text {
-    font-size: 12px;
-    margin-bottom: 8px;
-    line-height: 1.5;
-    color: #757575;
   }
 }
 

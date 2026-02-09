@@ -1,4 +1,4 @@
-import Container from "../assets/Images/Container.png";
+import Container from "../assets/Images/about.png";
 
 function AboutUs() {
   return (

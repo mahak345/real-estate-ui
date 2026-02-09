@@ -3,18 +3,18 @@
     "id": 1,
     "title": "Luxury 3 Bedroom Apartment",
     "price": "₹45,00,000",
-    "image": "/src/assets/images/offer1.jpg"
+    "image": "/src/assets/images/container3.png"
   },
   {
     "id": 2,
     "title": "Modern Glass Villa",
     "price": "₹1,20,00,000",
-    "image": "/src/assets/images/offer2.jpg"
+    "image": "/src/assets/images/container2.png"
   },
   {
     "id": 3,
     "title": "City View Apartment",
     "price": "₹65,00,000",
-    "image": "/src/assets/images/offer3.jpg"
+    "image": "/src/assets/images/container3.png"
   }
 ]
