@@ -1,6 +1,7 @@
 import "../styles/Footer.scss";
 import Logo from "../assets/images/Logo.png"; 
 function Footer() {
+  
   return (
     <footer className="footer-green">
       <div className="container">
@@ -33,3 +34,4 @@ function Footer() {
 
 export default Footer;
 
+// footer updated by Mahak
