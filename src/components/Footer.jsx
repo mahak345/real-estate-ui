@@ -5,7 +5,6 @@ function Footer() {
     <footer className="footer-green">
       <div className="container">
         <div className="row align-items-center">
-          {/* LOGO IMAGE */}
           <div className="col-md-4 mb-3 mb-md-0">
             <img
               src={Logo}
