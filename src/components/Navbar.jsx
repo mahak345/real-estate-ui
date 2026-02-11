@@ -1,8 +1,8 @@
-// Navbar.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.scss";
-import Logo from "../assets/images/Logo.png"; 
+import Logo from "../assets/images/Logo.png";
+
 
 function Navbar() {
   return (
