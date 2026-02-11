@@ -1,15 +1,16 @@
 import "../styles/ExclusiveRoom.scss";
 import "../styles/Navbar.scss";
 import "../styles/Footer.scss";
+
 import propertyImg from "../assets/images/Image.png";
-import paperPlane from "../assets/images/paper-plane.png";
+import newsletterImg from "../assets/images/paper plane.png";
 import FlatImg from "../assets/images/Flat.png";
 import Dimensions from "../assets/images/Dimensions.png";
-import Location from "../assets/images/location-pin.png"; 
-import related1 from "../assets/images/container2.png"; 
+import Location from "../assets/images/location pin.png";
+import related1 from "../assets//images/container2.png";
 import related2 from "../assets/images/Container8.png";
 import related3 from "../assets/images/Container9.png";
-import newsletterImg from "../assets/images/newsletter.png";
+
 
 export default function ExclusiveRoom() {
   return (
@@ -46,6 +47,7 @@ export default function ExclusiveRoom() {
         <button>Get a mortgage</button>
       </div>
 
+      {/* DESCRIPTION */}
       <div className="property-content">
         <p>
           Real estate offers an exclusive FOR SALE elegant large 5-room apartment
@@ -91,6 +93,7 @@ export default function ExclusiveRoom() {
         with a separate bathroom.
       </p>
 
+      {/* FURNISHING */}
       <h3>Execution and furnishing of the apartment:</h3>
       <p>
         The apartment has intelligent control via a mobile application. Premium
@@ -138,8 +141,7 @@ export default function ExclusiveRoom() {
         <textarea placeholder="Your message" rows="4" />
         <button>Send Message</button>
       </div>
-
-      {/* RELATED PROPERTIES */}
+      {/* YOU MIGHT BE INTERESTED IN */}
       <div className="related-section">
         <h3>You might be interested in</h3>
         <div className="related-grid">
@@ -149,6 +151,7 @@ export default function ExclusiveRoom() {
             <p>Barcelona I.</p>
             <span>€ 980 000</span>
           </div>
+          
 
           <div className="related-card">
             <img src={related2} alt="Property 2" />
