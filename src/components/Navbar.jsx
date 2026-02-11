@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.scss";
-import Logo from "../assets/images/Logo.png";
+import Logo from "../assets/images/logo.png";
 
 
 function Navbar() {
@@ -9,12 +9,9 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div className="container">
 
-        {/* LOGO */}
         <Link className="navbar-brand" to="/">
           <img src={Logo} alt="Logo" /> 
         </Link>
-
-        {/* TOGGLER */}
         <button
           className="navbar-toggler"
           type="button"
