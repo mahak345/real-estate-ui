@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import SearchResult from "./pages/SearchResult";
 import Exclusives from "./components/Exclusives";
-import "./styles/main.scss";
+import "./styles/Main.scss";
 
 function App() {
   return (
