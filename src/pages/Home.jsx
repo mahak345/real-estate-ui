@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
 import TopOffers from "../components/TopOffers";
 import Testimonials from "../components/Testimonials";
-import AboutUS from "../components/AboutUS"; // <-- Fixed casing
+import AboutUS from "../components/AboutUS"; 
 import Newsletter from "../components/Newsletter";
 
 import "../styles/Home.scss";
@@ -34,5 +34,4 @@ function Home() {
     </main>
   );
 }
-
 export default Home;
