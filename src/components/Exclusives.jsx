@@ -1,16 +1,15 @@
 import "../styles/ExclusiveRoom.scss";
 import "../styles/Navbar.scss";
 import "../styles/Footer.scss";
-
 import propertyImg from "../assets/images/Image.png";
-import PaperPlane from "../assets/images/paper plane.png";
+import paperPlane from "../assets/images/paper-plane.png";
 import FlatImg from "../assets/images/Flat.png";
 import Dimensions from "../assets/images/Dimensions.png";
-import Location from "../assets/images/location pin.png";
-import related1 from "../assets//images/container2.png";
+import Location from "../assets/images/location-pin.png"; 
+import related1 from "../assets/images/container2.png"; 
 import related2 from "../assets/images/Container8.png";
 import related3 from "../assets/images/Container9.png";
-
+import newsletterImg from "../assets/images/newsletter.png";
 
 export default function ExclusiveRoom() {
   return (
@@ -139,6 +138,8 @@ export default function ExclusiveRoom() {
         <textarea placeholder="Your message" rows="4" />
         <button>Send Message</button>
       </div>
+
+      {/* RELATED PROPERTIES */}
       <div className="related-section">
         <h3>You might be interested in</h3>
         <div className="related-grid">
@@ -148,7 +149,6 @@ export default function ExclusiveRoom() {
             <p>Barcelona I.</p>
             <span>€ 980 000</span>
           </div>
-          
 
           <div className="related-card">
             <img src={related2} alt="Property 2" />
@@ -180,4 +180,3 @@ export default function ExclusiveRoom() {
     </div>
   );
 }
-
