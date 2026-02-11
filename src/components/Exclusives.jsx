@@ -11,7 +11,6 @@ import related1 from "../assets//images/container2.png";
 import related2 from "../assets/images/Container8.png";
 import related3 from "../assets/images/Container9.png";
 
-
 export default function ExclusiveRoom() {
   return (
     <div className="property-page">
