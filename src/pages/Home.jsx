@@ -1,12 +1,13 @@
 import Hero from "../components/Hero";
 import TopOffers from "../components/TopOffers";
 import Testimonials from "../components/Testimonials";
-import AboutUs from "../components/AboutUs";
+import AboutUS from "../components/AboutUS"; // <-- Fixed casing
 import Newsletter from "../components/Newsletter";
+
 import "../styles/Home.scss";
 import "../styles/Newsletter.scss";
 import "../styles/hero.scss";
-import "../styles/main.scss";
+import "../styles/Main.scss";
 
 function Home() {
   return (
@@ -24,7 +25,7 @@ function Home() {
       </section>
 
       <section id="about-us" className="section about-section">
-        <AboutUs />
+        <AboutUS /> {/* <-- Matches the filename */}
       </section>
 
       <section id="contact" className="section newsletter-section">
@@ -33,6 +34,5 @@ function Home() {
     </main>
   );
 }
-
 
 export default Home;
