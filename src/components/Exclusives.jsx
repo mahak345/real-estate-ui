@@ -3,7 +3,7 @@ import "../styles/Navbar.scss";
 import "../styles/Footer.scss";
 
 import propertyImg from "../assets/images/Image.png";
-import newsletterImg from "../assets/images/paper plane.png";
+import PaperPlane from "../assets/images/paper plane.png";
 import FlatImg from "../assets/images/Flat.png";
 import Dimensions from "../assets/images/Dimensions.png";
 import Location from "../assets/images/location pin.png";
@@ -47,7 +47,6 @@ export default function ExclusiveRoom() {
         <button>Get a mortgage</button>
       </div>
 
-      {/* DESCRIPTION */}
       <div className="property-content">
         <p>
           Real estate offers an exclusive FOR SALE elegant large 5-room apartment
@@ -93,7 +92,6 @@ export default function ExclusiveRoom() {
         with a separate bathroom.
       </p>
 
-      {/* FURNISHING */}
       <h3>Execution and furnishing of the apartment:</h3>
       <p>
         The apartment has intelligent control via a mobile application. Premium
@@ -141,7 +139,6 @@ export default function ExclusiveRoom() {
         <textarea placeholder="Your message" rows="4" />
         <button>Send Message</button>
       </div>
-      {/* YOU MIGHT BE INTERESTED IN */}
       <div className="related-section">
         <h3>You might be interested in</h3>
         <div className="related-grid">
