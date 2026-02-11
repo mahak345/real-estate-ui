@@ -1,7 +1,7 @@
 import Hero from "./Hero";
 import TopOffers from "./TopOffers";
 import Testimonials from "./Testimonials";
-import AboutUs from "./AboutUs";
+import AboutUs from "./AboutUS";
 import Newsletter from "./Newsletter";
 
 import "../styles/Home.scss";
