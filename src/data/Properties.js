@@ -1,3 +1,4 @@
+//  images
 
 import img1 from "../assets/images/container1.png";
 import img2 from "../assets/images/container2.png";

@@ -4,7 +4,7 @@ import "swiper/css";
 
 import offer1 from "../assets/images/container1.png";
 import offer2 from "../assets/images/container2.png";
-import offer3 from "../assets/images/Container3.png";
+import offer3 from "../assets/images/container3.png"; 
 import offer4 from "../assets/images/container1.png";
 import offer5 from "../assets/images/container2.png";
 import offer6 from "../assets/images/container3.png";
@@ -25,7 +25,8 @@ function TopOffers() {
     { img: offer8, title: "Elegant apartment with private terrace", price: "320 000€", city: "Madrid V." },
   ];
 
-    const handleShowAll = () => {
+  
+  const handleShowAll = () => {
     if (offers.length === 0) {
       setError("No offers available right now");
       return;
