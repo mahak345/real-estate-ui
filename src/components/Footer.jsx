@@ -1,10 +1,7 @@
 import "../styles/Footer.scss";
-import Logo from "./assets/images/logo.png";
-
-
+import Logo from "../assets/images/logo.png";  
 
 function Footer() {
-  
   return (
     <footer className="footer-green">
       <div className="container">
@@ -17,7 +14,6 @@ function Footer() {
             />
           </div>
 
-          {/* LINKS */}
           <div className="col-md-8">
             <ul className="footer-links d-flex justify-content-md-end justify-content-center">
               <li>Top offers</li>
@@ -28,10 +24,10 @@ function Footer() {
               <li>Contact</li>
             </ul>
           </div>
-
         </div>
       </div>
     </footer>
   );
 }
+
 export default Footer;
