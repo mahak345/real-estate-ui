@@ -1,7 +1,7 @@
 //  images
 import img1 from "../assets/images/container1.png";
 import img2 from "../assets/images/container2.png";
-import img3 from "../assets/images/container3.png";
+import container3 from "../assets/images/container3.png"; 
 import img4 from "../assets/images/container4.png";
 import img5 from "../assets/images/container5.png";
 import img6 from "../assets/images/container6.png";
