@@ -1,7 +1,7 @@
 import "../styles/ExclusiveRoom.scss";
 import "../styles/Navbar.scss";
 import "../styles/Footer.scss";
-import Newsletter from "../components/Newsletter"; 
+import Newsletter from "./Newsletter"; 
 
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
