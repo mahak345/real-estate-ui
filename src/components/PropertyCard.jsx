@@ -14,5 +14,4 @@ function PropertyCard({ title, price, location }) {
     </div>
   );
 }
-
 export default PropertyCard;

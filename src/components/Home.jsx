@@ -6,6 +6,7 @@ import Newsletter from "./Newsletter";
 import "./styles/Home.scss";
 import "./styles/Newsletter.scss";
 
+
 function Home() {
   return (
     <main className="home-page">

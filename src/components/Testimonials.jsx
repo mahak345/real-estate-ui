@@ -100,8 +100,6 @@ function Testimonials() {
           </div>
         </div>
 
-
-        {/* Swiper */}
         <Swiper
           modules={[Navigation, Pagination]}
           onSwiper={(swiper) => (swiperRef.current = swiper)}

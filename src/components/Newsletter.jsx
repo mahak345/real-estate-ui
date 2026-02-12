@@ -11,7 +11,6 @@ function Newsletter() {
       alert("Please enter email");
       return;
     }
-
     if (!email.includes("@")) {
       alert("Please enter valid email");
       return;

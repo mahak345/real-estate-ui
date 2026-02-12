@@ -14,7 +14,6 @@ import containerImg9 from "../assets/images/Tooltip.png";
 import containerImg10 from "../assets/images/container1.png";
 import containerImg11 from "../assets/images/Container8.png";
 import containerImg12 from "../assets/images/Container9.png";
-
 function OffersGrid() {
   const offers = [
     {

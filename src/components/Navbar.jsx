@@ -9,7 +9,6 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div className="container">
 
-        {/* LOGO */}
         <Link className="navbar-brand" to="/">
           <img src={Logo} alt="Logo" /> 
         </Link>

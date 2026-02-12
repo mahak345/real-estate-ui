@@ -25,8 +25,7 @@ function TopOffers() {
     { img: offer8, title: "Elegant apartment with private terrace", price: "320 000€", city: "Madrid V." },
   ];
 
-  
-  const handleShowAll = () => {
+    const handleShowAll = () => {
     if (offers.length === 0) {
       setError("No offers available right now");
       return;

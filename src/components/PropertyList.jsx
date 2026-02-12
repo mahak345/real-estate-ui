@@ -1,7 +1,6 @@
 import img1 from "../assets/images/Container.png";
 import img2 from "../assets/images/Container.png";
 import img3 from "../assets/images/Container.png";
-
 const properties = [
   {
     id: 1,

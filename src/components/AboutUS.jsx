@@ -31,7 +31,6 @@ function AboutUs() {
           </p>
 
         </div>
-
       </div>
 
     </section>

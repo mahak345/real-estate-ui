@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import heroImg from "../assets/images/Container.jpg";
 import "../styles/hero.scss";
-
 function Hero() {
   const [location, setLocation] = useState("");
   const [propertyType, setPropertyType] = useState("");

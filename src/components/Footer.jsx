@@ -33,5 +33,3 @@ function Footer() {
 }
 
 export default Footer;
-
-// footer updated by Mahak
