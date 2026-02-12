@@ -33,12 +33,10 @@ export default function ExclusiveRoom() {
         <h1>{property.title}</h1>
       </header>
 
-      {/* MAIN IMAGE */}
       <div className="property-image">
         <img src={mainImage} alt={property.title} />
       </div>
 
-      {/* THUMBNAILS */}
       <div className="thumbnail-row">
         {property.images.map((img, index) => (
           <img

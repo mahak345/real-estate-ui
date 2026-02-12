@@ -1,4 +1,3 @@
-import Navbar from "./components/Navbar";
 import Hero from "../components/Hero";
 import TopOffers from "../components/TopOffers";
 import Testimonials from "../components/Testimonials";
@@ -14,8 +13,7 @@ import "../styles/Main.scss";
 function Home() {
   return (
     <>
-      <Navbar />
-
+     
       <main className="home-page">
         <section id="hero" className="section hero-section">
           <Hero />
@@ -38,7 +36,6 @@ function Home() {
         </section>
       </main>
 
-      <Footer />
     </>
   );
 }

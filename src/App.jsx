@@ -10,7 +10,6 @@ import ExclusiveRoom from "./pages/ExclusiveRoom";
 function App() {
   return (
     <Router>
-      {/* Navbar displayed on all pages */}
       <Navbar />
 
       <Routes>
@@ -19,7 +18,7 @@ function App() {
         <Route path="/property/:id" element={<ExclusiveRoom />} />
       </Routes>
 
-      {/* Footer displayed on all pages */}
+
       <Footer />
     </Router>
   );
