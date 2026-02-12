@@ -1,7 +1,7 @@
 import "../styles/ExclusiveRoom.scss";
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import properties from "../data/properties";
+import properties from "../data/Properties";
 import Exclusive from "../components/Exclusive";
 
 export default function ExclusiveRoom() {
