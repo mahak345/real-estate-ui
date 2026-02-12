@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
 import TopOffers from "../components/TopOffers";
 import Testimonials from "../components/Testimonials";
-import AboutUs from "../components/AboutUs";
+import AboutUs from "../componenents/AboutUs"; // typo here
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 
