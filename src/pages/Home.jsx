@@ -1,11 +1,11 @@
-// src/pages/Home.jsx
+import React from "react";
 
-import Hero from "../components/Hero";
-import TopOffers from "../components/TopOffers";
-import Testimonials from "../components/Testimonials";
-import AboutUs from "../components/AboutUs"; 
-import Newsletter from "../components/Newsletter";
-import Footer from "../components/Footer";
+import Hero from "../components/Hero.jsx";
+import TopOffers from "../components/TopOffers.jsx";
+import Testimonials from "../components/Testimonials.jsx";
+import AboutUs from "../components/AboutUs.jsx";
+import Newsletter from "../components/Newsletter.jsx";
+import Footer from "../components/Footer.jsx";
 
 import "../styles/Home.scss";
 import "../styles/Newsletter.scss";
