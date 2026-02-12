@@ -1,4 +1,5 @@
 //  images
+
 import img1 from "../assets/images/container1.png";
 import img2 from "../assets/images/container2.png";
 import container3 from "../assets/images/container3.png"; 
@@ -28,7 +29,7 @@ const properties = [
     title: "Newly built 4-room apartment with premium finishes",
     location: "Madrid III.",
     price: "390 000€",
-    images: [img3],
+    images: [container3],
   },
   {
     id: 4,
@@ -70,7 +71,7 @@ const properties = [
     title: "Contemporary 4-bedroom unit with high-end features",
     location: "Madrid IV.",
     price: "455 000€",
-    images: [img3],
+    images: [container3],
   },
   {
     id: 10,

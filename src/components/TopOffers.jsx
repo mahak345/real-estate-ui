@@ -17,7 +17,7 @@ function TopOffers() {
   const offers = [
     { img: offer1, title: "Large 4-room apartment with a beautiful terrace", price: "320 000€", city: "Barcelona IV." },
     { img: offer2, title: "Magnificent duplex in a private villa", price: "315 000€", city: "Barcelona II." },
-    { img: offer3, title: "5i large design apartment with terrace", price: "280 000€", city: "Madrid VI." },
+    { img: container3, title: "5i large design apartment with terrace", price: "280 000€", city: "Madrid VI." },
     { img: offer4, title: "Elegant apartment with private terrace", price: "320 000€", city: "Madrid V." },
     { img: offer5, title: "Large 4-room apartment with a beautiful terrace", price: "320 000€", city: "Barcelona IV." },
     { img: offer6, title: "Magnificent duplex in a private villa", price: "315 000€", city: "Barcelona II." },
