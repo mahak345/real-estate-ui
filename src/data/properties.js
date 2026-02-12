@@ -2,7 +2,7 @@
 
 import img1 from "../assets/images/container1.png";
 import img2 from "../assets/images/container2.png";
-import container3 from "../assets/images/container3.png"; 
+import img3 from "../assets/images/container3.png"; 
 import img4 from "../assets/images/container4.png";
 import img5 from "../assets/images/container5.png";
 import img6 from "../assets/images/container6.png";
@@ -29,8 +29,9 @@ const properties = [
     title: "Newly built 4-room apartment with premium finishes",
     location: "Madrid III.",
     price: "390 000€",
-    images: [container3],
+    images: [img3],
   },
+  
   {
     id: 4,
     title: "Charming 2-bedroom flat in a prime urban area",
