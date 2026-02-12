@@ -1,5 +1,5 @@
 import "../styles/Footer.scss";
-import Logo from "../assets/images/logo.png";  
+// import Logo from "../assets/images/logo.png";  
 
 function Footer() {
   return (
@@ -7,11 +7,11 @@ function Footer() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-4 mb-3 mb-md-0">
-            <img
+            {/* <img
               src={Logo}
               alt="Real Estate Logo"
               className="footer-logo-img"
-            />
+            /> */}
           </div>
 
           <div className="col-md-8">
