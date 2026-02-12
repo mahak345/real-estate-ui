@@ -1,5 +1,5 @@
 import { useState } from "react";
-import newsletterImg from "../assets/images/Paper plane.png";
+import newsletterImg from "../assets/images/Paper-plane.png";
 
 function Newsletter() {
   const [email, setEmail] = useState("");

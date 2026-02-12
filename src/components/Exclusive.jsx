@@ -9,7 +9,7 @@ import properties from "../data/properties";
 
 import FlatImg from "../assets/images/Flat.png";
 import Dimensions from "../assets/images/Dimensions.png";
-import Location from "../assets/images/location pin.png";
+import Location from "../assets/images/location-pin.png";
 import related1 from "../assets/images/container2.png";
 import related2 from "../assets/images/Container8.png";
 import related3 from "../assets/images/Container9.png";
