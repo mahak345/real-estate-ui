@@ -9,7 +9,6 @@ function SearchBar() {
   const [success, setSuccess] = useState(false);
 
   const handleSearch = () => {
-    // 🔴 Validation
     if (!location.trim()) {
       setMessage("Please enter a location");
       setSuccess(false);
@@ -31,11 +30,9 @@ function SearchBar() {
       return;
     }
 
-    // ✅ Success notification
     setMessage("Search completed successfully!");
     setSuccess(true);
 
-    // (Optional) auto-hide notification
     setTimeout(() => {
       setMessage("");
     }, 3000);
@@ -46,7 +43,6 @@ function SearchBar() {
       <div className="container">
         <h4 className="mb-3">Search for an offer</h4>
 
-        {/* 🔔 Notification */}
         {message && (
           <div
             className={`alert ${
