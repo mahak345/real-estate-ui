@@ -1,7 +1,7 @@
 import Hero from "./Hero";
 import TopOffers from "./TopOffers";
 import Testimonials from "./Testimonials";
-import AboutUs from "./AboutUs";
+import AboutUS from "./AboutUS";
 import Newsletter from "./Newsletter";
 import "./styles/Home.scss";
 import "./styles/Newsletter.scss";
@@ -22,7 +22,7 @@ function Home() {
       </section>
 
       <section id="about-us" className="section about-section">
-        <AboutUs />
+        <AboutUS />
       </section>
       <section id="contact" className="section newsletter-section">
         <Newsletter />
