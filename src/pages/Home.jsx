@@ -3,7 +3,7 @@ import React from "react";
 import Hero from "../components/Hero.jsx";
 import TopOffers from "../components/TopOffers.jsx";
 import Testimonials from "../components/Testimonials.jsx";
-import AboutUs from "../components/AboutUs.jsx";
+// import AboutUs from "../components/AboutUs.jsx";
 import Newsletter from "../components/Newsletter.jsx";
 import Footer from "../components/Footer.jsx";
 
