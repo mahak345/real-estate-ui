@@ -41,9 +41,6 @@ function Home() {
           <Newsletter />
         </section>
 
-        {/* FOOTER */}
-        <Footer />
-
       </main>
     </>
   );
