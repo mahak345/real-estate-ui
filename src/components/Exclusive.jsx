@@ -1,54 +1,76 @@
 import "../styles/ExclusiveRoom.scss";
 import "../styles/Navbar.scss";
 import "../styles/Footer.scss";
+import Newsletter from "./Newsletter"; 
 
-import propertyImg from "../assets/images/Image.png";
-import newsletterImg from "../assets/images/paper plane.png";
+import { useParams, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import properties from "../data/properties";
+
 import FlatImg from "../assets/images/Flat.png";
 import Dimensions from "../assets/images/Dimensions.png";
 import Location from "../assets/images/location pin.png";
-import related1 from "../assets//images/container2.png";
+import related1 from "../assets/images/container2.png";
 import related2 from "../assets/images/Container8.png";
 import related3 from "../assets/images/Container9.png";
 
-
 export default function ExclusiveRoom() {
+  const { id } = useParams();
+  const navigate = useNavigate();
+
+  const property = properties.find((item) => item.id === parseInt(id));
+  const [mainImage, setMainImage] = useState(property?.images[0]);
+
+  if (!property) return <h2>Property Not Found</h2>;
+
+  const related = properties.filter((item) => item.id !== property.id);
+
   return (
     <div className="property-page">
+      {/* HEADER */}
       <header className="property-header">
-        <span className="back-btn">← Back</span>
-        <h1>Exclusive 5-room residence with a rooftop terrace</h1>
+        
+        <h1>{property.title}</h1>
       </header>
 
       <div className="property-image">
-        <img src={propertyImg} alt="Exclusive property" />
+        <img src={mainImage} alt={property.title} />
       </div>
 
-      <div className="property-info">
-        <div className="info-item">
-          <img src={FlatImg} alt="Flat" />
-          <span>a Flat</span>
-        </div>
+      <div className="thumbnail-row">
+        {property.images.map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt={`Thumbnail ${index + 1}`}
+            onClick={() => setMainImage(img)}
+            className="thumb"
+          />
+        ))}
+      </div>
 
+        <div className="property-info">
+        <div className="info-item">
+          <img src={FlatImg} alt="Type" />
+          <span>{property.type}</span>
+        </div>
         <div className="info-item">
           <img src={Dimensions} alt="Area" />
-          <span>224 m²</span>
+          <span>{property.area}</span>
         </div>
-
         <div className="info-item">
           <img src={Location} alt="Location" />
-          <span>Barcelona I.</span>
+          <span>{property.location}</span>
         </div>
       </div>
 
-      <div className="mortgage-box">
+        <div className="mortgage-box">
         <p>Mortgage since</p>
         <h3>807.57 € / month</h3>
         <button>Get a mortgage</button>
       </div>
 
-      {/* DESCRIPTION */}
-      <div className="property-content">
+           <div className="property-content">
         <p>
           Real estate offers an exclusive FOR SALE elegant large 5-room apartment
           on Vincent Hoičk Street in the Condominium Renaissance residential complex.
@@ -121,7 +143,6 @@ export default function ExclusiveRoom() {
         and many other benefits.
       </p>
 
-      {/* MAP */}
       <div className="map">
         <iframe
           title="Barcelona Map"
@@ -141,7 +162,7 @@ export default function ExclusiveRoom() {
         <textarea placeholder="Your message" rows="4" />
         <button>Send Message</button>
       </div>
-      {/* YOU MIGHT BE INTERESTED IN */}
+
       <div className="related-section">
         <h3>You might be interested in</h3>
         <div className="related-grid">
@@ -151,15 +172,12 @@ export default function ExclusiveRoom() {
             <p>Barcelona I.</p>
             <span>€ 980 000</span>
           </div>
-          
-
           <div className="related-card">
             <img src={related2} alt="Property 2" />
             <h4>Elegant 4-bedroom residence</h4>
             <p>Barcelona II.</p>
             <span>€ 1 120 000</span>
           </div>
-
           <div className="related-card">
             <img src={related3} alt="Property 3" />
             <h4>Luxury apartment with terrace</h4>
@@ -169,18 +187,8 @@ export default function ExclusiveRoom() {
         </div>
       </div>
 
-      {/* NEWSLETTER */}
-      <div className="newsletter">
-        <img src={newsletterImg} alt="Newsletter" />
-        <h3>Subscribe to newsletter</h3>
-        <p>Get the latest news and interesting offers and real estate</p>
+      <Newsletter />
 
-        <div className="newsletter-form">
-          <input placeholder="Your e-mail address" />
-          <button>Subscribe</button>
-        </div>
-      </div>
     </div>
   );
 }
-
