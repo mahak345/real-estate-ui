@@ -29,7 +29,7 @@ export default function ExclusiveRoom() {
     <div className="property-page">
       {/* HEADER */}
       <header className="property-header">
-        <span className="back-btn" onClick={() => navigate(-1)}>← Back</span>
+        
         <h1>{property.title}</h1>
       </header>
 

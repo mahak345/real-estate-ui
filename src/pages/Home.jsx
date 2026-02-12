@@ -32,10 +32,9 @@ function Home() {
           <Testimonials />
         </section>
 {/* 
-        ABOUT US
         <section id="about-us" className="section about-section">
-          <AboutUs />
-        </section> */}
+         <AboutUs />
+         </section>  */}
 
         {/* NEWSLETTER */}
         <section id="contact" className="section newsletter-section">

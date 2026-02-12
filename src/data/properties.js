@@ -31,7 +31,7 @@ const properties = [
     price: "390 000€",
     images: [img3],
   },
-  
+
   {
     id: 4,
     title: "Charming 2-bedroom flat in a prime urban area",
@@ -72,7 +72,7 @@ const properties = [
     title: "Contemporary 4-bedroom unit with high-end features",
     location: "Madrid IV.",
     price: "455 000€",
-    images: [container3],
+    images: [img3],
   },
   {
     id: 10,
