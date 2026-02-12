@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import "../styles/Search.scss";
 
 
+
 function SearchResult() {
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
