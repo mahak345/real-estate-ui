@@ -3,7 +3,7 @@ import React from "react";
 import Hero from "../components/Hero.jsx";
 import TopOffers from "../components/TopOffers.jsx";
 import Testimonials from "../components/Testimonials.jsx";
-// import AboutUs from "../components/AboutUs.jsx";
+// import AboutUs from "../components/AboutUS.jsx";
 import Newsletter from "../components/Newsletter.jsx";
 import Footer from "../components/Footer.jsx";
 
@@ -31,11 +31,11 @@ function Home() {
         <section id="testimonials" className="section testimonials-section">
           <Testimonials />
         </section>
-
-        {/* ABOUT US */}
+{/* 
+        ABOUT US
         <section id="about-us" className="section about-section">
           <AboutUs />
-        </section>
+        </section> */}
 
         {/* NEWSLETTER */}
         <section id="contact" className="section newsletter-section">
