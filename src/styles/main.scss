@@ -16,7 +16,6 @@ $desktop: 1440px;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Inter", sans-serif;
   color: $dark;
@@ -205,7 +204,6 @@ p  { font-size: 16px; line-height: 1.6; color: $text-muted; margin-bottom: 16px;
   br { display: none; }
 }
 
-//import all components
 @import "./navbar";
 @import "./hero";
 @import "./offers";
@@ -213,5 +211,3 @@ p  { font-size: 16px; line-height: 1.6; color: $text-muted; margin-bottom: 16px;
 @import "./AboutUs";
 @import "./newsletter";
 @import "./footer";
-
-
