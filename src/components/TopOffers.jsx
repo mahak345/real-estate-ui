@@ -4,7 +4,7 @@ import "swiper/css";
 
 import offer1 from "../assets/images/container1.png";
 import offer2 from "../assets/images/container2.png";
-import container3 from "../assets/images/container3.png"; 
+import offer3 from "../assets/images/container3.png"; 
 import offer4 from "../assets/images/container1.png";
 import offer5 from "../assets/images/container2.png";
 import offer6 from "../assets/images/container3.png";
@@ -17,7 +17,7 @@ function TopOffers() {
   const offers = [
     { img: offer1, title: "Large 4-room apartment with a beautiful terrace", price: "320 000€", city: "Barcelona IV." },
     { img: offer2, title: "Magnificent duplex in a private villa", price: "315 000€", city: "Barcelona II." },
-    { img: container3, title: "5i large design apartment with terrace", price: "280 000€", city: "Madrid VI." },
+    { img: offer3, title: "5i large design apartment with terrace", price: "280 000€", city: "Madrid VI." },
     { img: offer4, title: "Elegant apartment with private terrace", price: "320 000€", city: "Madrid V." },
     { img: offer5, title: "Large 4-room apartment with a beautiful terrace", price: "320 000€", city: "Barcelona IV." },
     { img: offer6, title: "Magnificent duplex in a private villa", price: "315 000€", city: "Barcelona II." },
