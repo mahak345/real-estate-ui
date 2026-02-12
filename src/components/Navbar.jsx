@@ -1,8 +1,8 @@
-// Navbar.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.scss";
-import Logo from "../assets/images/Logo.png"; 
+import Logo from "../assets/images/logo.png";
+
 
 function Navbar() {
   return (
@@ -12,8 +12,6 @@ function Navbar() {
         <Link className="navbar-brand" to="/">
           <img src={Logo} alt="Logo" /> 
         </Link>
-
-        {/* TOGGLER */}
         <button
           className="navbar-toggler"
           type="button"
