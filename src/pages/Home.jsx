@@ -10,7 +10,7 @@ import Footer from "../components/Footer.jsx";
 import "../styles/Home.scss";
 import "../styles/Newsletter.scss";
 import "../styles/hero.scss";
-import "../styles/Main.scss";
+import "../styles/main.scss";
 
 function Home() {
   return (
